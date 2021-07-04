@@ -1,0 +1,122 @@
+
+//верхний марджин в advantages нужно буждет подогнать после добавления хиро!!!
+.advantages{
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    &-list-item{
+        display: flex;
+        align-items: center;
+    }
+    &-list-item:not(:last-child){
+        margin-bottom: 26px;
+    }
+    &-icon{
+        width: 59px;
+        height:60px;
+    }
+    &-icon-wrap{
+        border: 2px solid var(--accent-color);
+        width: 59px;
+        height:60px;
+        fill: var(--accent-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    &-icon-wrap::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 65%;
+        background-color: var(--white);
+        right: -3px;
+    }
+    &-title{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.66;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+    
+        padding-left: 68px;
+    }
+}
+.girl-icon{
+    width: 33px;
+    height: 40px;
+}
+.mobile-learning-icon{
+    width: 42px;
+    height: 41px;
+}
+.insurance-icon{
+    width: 35px;
+    height: 40px;
+}
+//=============респонсив мобилка
+@media screen and (max-width: 767px){
+    .advantages{
+        width: 216px;
+    }
+}
+//=============планшет
+@media screen and (min-width: 768px){
+    .advantages{
+        width: 688px;
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+            &-list-item{
+                width: 33.3%;
+                justify-content: flex-start
+            }
+            &-list-item:not(:last-child){
+                margin-bottom: 0px;
+                }
+            &-list-item:nth-child(n+2){
+                max-width: 180px;
+                }
+    }  
+}
+//=============десктоп
+@media screen and (min-width: 1366px){
+    .advantages{
+        width: 1344px;
+        &-icon-wrap{
+            width: 100px;
+            height: 100px;
+        }
+        &-title{
+            font-size: 20px;
+            position: relative;
+            max-width: 366px;
+            margin-left: -20px;
+            padding-left: 104px
+        }
+        &-list-item{
+            max-width: 366px;
+        }
+        &-list-item:nth-child(n+2){
+            max-width: 366px;
+        }
+    }
+    .girl-icon{
+        width: 40px;
+        height: 48px;
+    }
+    .mobile-learning-icon{
+        width: 48px;
+        height: 47px;
+    }
+    .insurance-icon{
+        width: 42px;
+        height: 48px;
+    }  
+}
