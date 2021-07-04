@@ -33,3 +33,8 @@ body {
 
   background-color: var(--white);
 }
+
+// для окраски ТЕКСТА в цвет акцента
+.accent-color {
+  color: var(--accent-color);
+}
