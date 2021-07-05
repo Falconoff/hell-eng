@@ -57,7 +57,7 @@
 //=============responsive-mobile==============//
 @media screen and (max-width: 767px){
     .contacts{
-        max-width: 320px;
+        max-width: 480px;
     &-title{
         margin-bottom: 30px;
         font-size: 14px;
@@ -117,7 +117,7 @@
             width: 478px;
             height: 70px;
             &:last-child{
-                margin-bottom: 77px;
+                margin-bottom: 80px;
             }
         }
         &-form-button{
