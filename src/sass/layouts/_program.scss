@@ -1,0 +1,110 @@
+.program {
+  background-color: var(--main-color);
+
+  &__title {
+    color: var(--white);
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 43px;
+
+    @media screen and (max-width: 767px) {
+      @include font-prop($fw: 800, $fz: 20px, $lh: 1.3, $ls: 0.03em);
+    }
+    @media screen and (min-width: 768px) {
+      @include font-prop($fw: 800, $fz: 26px, $lh: 1.3, $ls: 0.03em);
+    }
+    @media screen and (min-width: 1366px) {
+      @include font-prop($fw: 800, $fz: 46px, $lh: 1.3, $ls: 0.03em);
+    }
+  }
+}
+
+.program__container {
+  margin-left: 94px;
+  text-align: left;
+}
+
+.program__first-list-item {
+  color: var(--white);
+  text-transform: uppercase;
+  padding-left: 20px;
+  position: relative;
+
+  &:not(:last-child) {
+    border-left: 1px solid var(--white);
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    @include font-prop($fw: 700, $fz: 14px, $lh: 1, $ls: 0.08em);
+  }
+
+  @media screen and (min-width: 1366px) {
+    @include font-prop($fw: 700, $fz: 20px, $lh: 1.4, $ls: 0.08em);
+  }
+}
+
+.program__first-list-item::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: -6px;
+}
+
+.program__second-list {
+  margin-top: 5px;
+}
+
+.program__second-list-item {
+  color: var(--accent-color);
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    @include font-prop($fw: 700, $fz: 12px, $lh: 1.65, $ls: 0.08em);
+  }
+  @media screen and (min-width: 768px) {
+    @include font-prop();
+  }
+  @media screen and (min-width: 1366px) {
+    @include font-prop($fw: 700, $fz: 20px, $lh: 1.65, $ls: 0.08em);
+  }
+}
+
+.program__second-list-item_padding {
+  padding-left: 20px;
+}
+
+.program__second-list-item::before {
+  content: '';
+  width: 12px;
+  height: 1px;
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 9px;
+}
+
+.program__third-list {
+  margin-top: 5px;
+}
+
+.program__third-list-item {
+  color: var(--secondary-color);
+  opacity: 0.5;
+
+  &_margin-bottom {
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    @include font-prop($fw: 500, $fz: 12px, $lh: 1.67, $ls: 0.08em);
+  }
+
+  @media screen and (min-width: 1366px) {
+    @include font-prop($fw: 500, $fz: 18px, $lh: 1.56, $ls: 0.08em);
+  }
+}
