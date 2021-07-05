@@ -1,18 +1,20 @@
 .hero {
   &__title {
+    margin-bottom: 30px;
+
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
   }
 
   &__slogan {
+    margin-bottom: 30px;
+
     font-size: 14px;
     line-height: 1.57;
     letter-spacing: 0.08em;
     color: #111518;
-    margin-bottom: 30px;
   }
 
   &__slogan-primary {
@@ -20,20 +22,25 @@
     color: var(--secondary-color);
   }
   &__button {
+    margin: 0 auto;
+    padding: 14px 0;
+    margin-bottom: 30px;
+
+    display: block;
+    width: 260px;
+    height: 48px;
+
+    background-color: var(--accent-color);
+    border: 0px;
+
+    cursor: pointer;
+  }
+  &__button-link {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--white);
-    background-color: var(--accent-color);
-    border: 0px;
-    padding: 14px 0;
-    width: 260px;
-    height: 48px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
   }
 }
