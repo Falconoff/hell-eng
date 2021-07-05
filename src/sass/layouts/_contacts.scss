@@ -29,7 +29,6 @@
         background-color: transparent;
         border: 1px solid var(--white);
         outline: none;
-        
         &:not(:placeholder-shown):required:invalid {
             border-color: red;
           }
@@ -70,13 +69,11 @@
         padding-top: 66px;
         max-width: 768px;
         &__title{
-            margin-bottom: 60px;
+            margin:0 40px 50px 40px;
             font-size: 26px;
         }
         &__text{
-            margin-left: 165px;
-            margin-right: 165px;
-            margin-bottom: 23px;
+            margin:0 158px 23px 158px;
         }
         &__form-input{
             margin-bottom:29px;
@@ -102,9 +99,7 @@
         padding-top: 100px;
         max-width: 1680px;
         &__title{
-            margin-left: 196px;
-            margin-right: 190px;
-            margin-bottom: 50px;
+            margin:0 295px 50px 295px;
             font-size: 46px;
         }
         &__text{
