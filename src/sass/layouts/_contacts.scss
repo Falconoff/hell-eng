@@ -1,0 +1,158 @@
+.contacts{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    text-align: center;
+    color: var(--white);
+    background-image: url("/images/contacts/mobile.png");
+    background-color: var(--main-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title{
+        font-weight: 800;
+        line-height: 1.3;
+    }
+    &__text{
+        margin-bottom: 30px;
+        font-weight:600;
+    }
+    &__form-input{
+        margin-bottom: 20px;
+        padding-left: 18px;
+        width: 280px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 1.21;
+        font-weight: 600;
+        color: var(--white);
+        background-color: transparent;
+        border: 1px solid var(--white);
+        outline: none;
+        &:not(:placeholder-shown):required:invalid {
+            border-color: red;
+          }
+        &::placeholder{
+            color: var(--white);
+            letter-spacing: 0.08em;
+        }
+        &:last-child{
+            margin-bottom: 50px;
+        }
+    }
+    &__form-button{
+        padding: 14px 0;
+        margin-bottom: 50px;
+        width: 260px;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: 0.08em;
+        text-transform:uppercase;
+        background-color:var(--accent-color);
+        color: var(--white);
+    }
+}
+
+//=============responsive-mobile==============//
+@media screen and (max-width: 767px){
+    .contacts{
+        max-width: 480px;
+    &__title{
+        margin-bottom: 30px;
+        font-size: 14px;
+        }
+    }  
+}
+//=============tablet================//
+@media screen and (min-width: 768px){
+    .contacts{
+        padding-top: 66px;
+        max-width: 768px;
+        &__title{
+            margin:0 40px 50px 40px;
+            font-size: 26px;
+        }
+        &__text{
+            margin:0 158px 23px 158px;
+        }
+        &__form-input{
+            margin-bottom:29px;
+            width: 390px;
+            height: 48px;
+            &:last-child{
+                margin-bottom: 31px;
+            }
+        }
+        &__form-button{
+            padding: 16px 43px;
+        }
+        &__input-wrapp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+//=============desktop================//
+@media screen and (min-width: 1366px){
+    .contacts{
+        padding-top: 100px;
+        max-width: 1680px;
+        &__title{
+            margin:0 295px 50px 295px;
+            font-size: 46px;
+        }
+        &__text{
+            margin-bottom: 65px;
+            font-size: 30px;
+            line-height: 1.23;
+            letter-spacing: 0.08em;
+         }
+        &__form-input{
+            width: 478px;
+            height: 70px;
+            &:last-child{
+                margin-bottom: 80px;
+            }
+        }
+        &__form-button{
+            padding: 25px 71px;
+            width: 354px;
+            letter-spacing: 0.14em;
+        }
+    }
+}
+/*  Media-rules for background images 2x and 0 - 767px */
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+.contacts {
+    background-image: url("/images/contacts/mobile@2x.png");
+    }
+}
+@media screen and (min-width: 768px) {
+    .contacts  {
+        background-image: url("/images/contacts/tablet.png");
+    }
+}
+/* 2x and 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (min-width: 768px) {
+    contacts  {
+        background-image: url("/images/contacts/tablet@2x.png");
+    }
+}
+@media screen and (min-width: 1366px) {
+    contacts  {
+        background-image: url("/images/contacts/desktop.png");
+    }
+}
+/* 2x and 1366+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+(min-resolution: 192dpi) and (min-width: 1366px),
+(min-resolution: 2dppx) and (min-width: 1366px) {
+    contacts  {
+        background-image: url("/images/contacts/desktop@2x.png");
+    }
+}
