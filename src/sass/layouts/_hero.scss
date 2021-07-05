@@ -1,6 +1,5 @@
 .hero {
   &__title {
-    margin-top: 52px;
     margin-bottom: 8px;
 
     font-weight: 800;
@@ -24,7 +23,6 @@
   }
   &__button {
     margin: 0 auto;
-    padding: 14px 0;
     margin-bottom: 55px;
 
     display: block;
@@ -33,6 +31,7 @@
 
     background-color: var(--accent-color);
     border: 0px;
+    padding: 14px 0;
 
     cursor: pointer;
   }
