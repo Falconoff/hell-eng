@@ -9,15 +9,15 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    &-title{
+    &__title{
         font-weight: 800;
         line-height: 1.3;
     }
-    &-text{
+    &__text{
         margin-bottom: 30px;
         font-weight:600;
     }
-    &-form-input{
+    &__form-input{
         margin-bottom: 20px;
         padding-left: 18px;
         width: 280px;
@@ -41,7 +41,7 @@
             margin-bottom: 50px;
         }
     }
-    &-form-button{
+    &__form-button{
         padding: 14px 0;
         margin-bottom: 50px;
         width: 260px;
@@ -58,7 +58,7 @@
 @media screen and (max-width: 767px){
     .contacts{
         max-width: 480px;
-    &-title{
+    &__title{
         margin-bottom: 30px;
         font-size: 14px;
         }
@@ -69,16 +69,16 @@
     .contacts{
         padding-top: 66px;
         max-width: 768px;
-        &-title{
+        &__title{
             margin-bottom: 60px;
             font-size: 26px;
         }
-        &-text{
+        &__text{
             margin-left: 165px;
             margin-right: 165px;
             margin-bottom: 23px;
         }
-        &-form-input{
+        &__form-input{
             margin-bottom:29px;
             width: 390px;
             height: 48px;
@@ -86,10 +86,10 @@
                 margin-bottom: 31px;
             }
         }
-        &-form-button{
+        &__form-button{
             padding: 16px 43px;
         }
-        &-input-wrapp{
+        &__input-wrapp{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -101,26 +101,26 @@
     .contacts{
         padding-top: 100px;
         max-width: 1680px;
-        &-title{
+        &__title{
             margin-left: 196px;
             margin-right: 190px;
             margin-bottom: 50px;
             font-size: 46px;
         }
-        &-text{
+        &__text{
             margin-bottom: 65px;
             font-size: 30px;
             line-height: 1.23;
             letter-spacing: 0.08em;
          }
-        &-form-input{
+        &__form-input{
             width: 478px;
             height: 70px;
             &:last-child{
                 margin-bottom: 80px;
             }
         }
-        &-form-button{
+        &__form-button{
             padding: 25px 71px;
             width: 354px;
             letter-spacing: 0.14em;
