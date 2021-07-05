@@ -1,40 +1,36 @@
 
 //верхний марджин в advantages нужно буждет подогнать после добавления хиро!!!
 .advantages{
-    margin-top: 120px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    &-list-item{
+    &__list-item{
         display: flex;
         align-items: center;
+        &:not(:last-child){
+            margin-bottom: 26px;
+        }
     }
-    &-list-item:not(:last-child){
-        margin-bottom: 26px;
-    }
-    &-icon{
-        width: 59px;
-        height:60px;
-    }
-    &-icon-wrap{
+    &__icon-wrap{
         border: 2px solid var(--accent-color);
         width: 59px;
         height:60px;
-        fill: var(--accent-color);
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 4px;
+            height: 65%;
+            background-color: var(--white);
+            right: -3px;
+        }
     }
-    &-icon-wrap::before{
-        content: "";
-        position: absolute;
-        display: block;
-        width: 4px;
-        height: 65%;
-        background-color: var(--white);
-        right: -3px;
-    }
-    &-title{
+    &__title{
+        padding-left: 68px;
         display: inline-block;
         font-weight: 700;
         font-size: 14px;
@@ -42,81 +38,100 @@
         display: flex;
         align-items: center;
         letter-spacing: 0.08em;
-    
-        padding-left: 68px;
     }
 }
-.girl-icon{
+.student-icon::after{
+    content: '';
     width: 33px;
     height: 40px;
+    background-image: url('/images/advantages/student.svg');
+    background-size: cover;
 }
-.mobile-learning-icon{
+.mobile-learning-icon::after{
+    content: '';
     width: 42px;
     height: 41px;
+    background-image: url('/images/advantages/mobile-learning.svg');
+    background-size: cover;
 }
-.insurance-icon{
+.insurance-icon::after{
+    content: '';
     width: 35px;
     height: 40px;
+    background-image: url('/images/advantages/insurance.svg');
+    background-size: cover;
 }
 //=============респонсив мобилка
 @media screen and (max-width: 767px){
     .advantages{
         width: 216px;
+        &__list-item:last-child{
+            margin-bottom: 50px;
+        }
     }
 }
 //=============планшет
 @media screen and (min-width: 768px){
     .advantages{
-        width: 688px;
-        &-list{
+        margin-top: 50px;
+        width: 728px;
+        &__list{
+            margin-bottom: 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+        &__list-item{
+            width: 33.3%;
+            justify-content: flex-start;
+            &:not(:last-child){
+            margin-bottom: 0px;
             }
-            &-list-item{
-                width: 33.3%;
-                justify-content: flex-start
-            }
-            &-list-item:not(:last-child){
-                margin-bottom: 0px;
-                }
-            &-list-item:nth-child(n+2){
+                &_:nth-child(n+2){
                 max-width: 180px;
-                }
+            }
+        }  
     }  
 }
 //=============десктоп
 @media screen and (min-width: 1366px){
     .advantages{
+        margin-top: 97px;
         width: 1344px;
-        &-icon-wrap{
+        &__icon-wrap{
             width: 100px;
             height: 100px;
         }
-        &-title{
+        &__title{
             font-size: 20px;
             position: relative;
             max-width: 366px;
             margin-left: -20px;
             padding-left: 104px
         }
-        &-list-item{
-            max-width: 366px;
+        &__list{
+            margin-bottom: 130px;
         }
-        &-list-item:nth-child(n+2){
+        &__list-item{
             max-width: 366px;
+            &:nth-child(n+2){
+                max-width: 366px;
+            }
         }
     }
-    .girl-icon{
+    .student-icon::after{
+        content: '';
         width: 40px;
         height: 48px;
     }
-    .mobile-learning-icon{
+    .mobile-learning-icon::after{
+        content: '';
         width: 48px;
         height: 47px;
     }
-    .insurance-icon{
+    .insurance-icon::after{
+        content: '';
         width: 42px;
         height: 48px;
-    }  
+    }
 }
