@@ -100,6 +100,10 @@
     align-items: center;
     justify-content: center;
   }
+  &__container{
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 //MEDIA RULES
