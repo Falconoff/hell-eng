@@ -22,9 +22,6 @@
     font-weight: 500;
     color: var(--secondary-color);
   }
-  &__slogan-accent-color {
-    color: var(--accent-color);
-  }
   &__button {
     margin: 0 auto;
     margin-bottom: 55px;
@@ -111,6 +108,7 @@
   .hero {
     min-width: 1680px;
     height: 800px;
+
     background-image: url('../images/hero/hero-back-desk.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,9 +125,7 @@
       font-size: 20px;
       line-height: 1.65;
     }
-    &__slogan-accent-color {
-      color: inherit;
-    }
+
     &__button {
       width: 355px;
       height: 70px;
