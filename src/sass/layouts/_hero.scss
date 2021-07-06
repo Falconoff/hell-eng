@@ -69,9 +69,6 @@
     height: 470px;
 
     background-image: url('../images/hero/hero-back-tab.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
 
     padding-top: 90px;
     &__container {
@@ -110,9 +107,6 @@
     height: 800px;
 
     background-image: url('../images/hero/hero-back-desk.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
     &__content-box {
       width: 642px;
     }
