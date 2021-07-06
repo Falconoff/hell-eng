@@ -1,36 +1,53 @@
 <header class="header header-line">
   <div class="container header__menu">
     <a class="header__logo" href="#">
-      <svg class="logo__img">
-        <use href="./images/header/logo-light-mob.svg"></use>
-      </svg>
+      <img src="./images/header/logo-light-mob.svg" />
     </a>
+    <nav class="header__menu-nav">
+      <ul class="header__menu-nav-list">
+        <li class="header__menu-nav-item">
+          <a href="#Studying program" class="header__menu-nav-link">Studying program</a>
+        </li>
+        <li class="header__menu-nav-item">
+          <a href="#About" class="header__menu-nav-link active">About</a>
+        </li>
+        <li class="header__menu-nav-item">
+          <a href="#Training options" class="header__menu-nav-link">Training options</a>
+        </li>
+        <li class="header__menu-nav-item">
+          <a href="#Contacts" class="header__menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
     <button type="button" class="menu-button" data-menu-button>
-      <svg width="" height="">
-        <use class="icon-menu" href="#"></use>
+      <svg width="20px" height="12px">
+        <use class="icon-menu" href="./images/icons.svg#menu-open"></use>
       </svg>
     </button>
     <div class="mobile__menu" data-menu>
-      <nav class="menu__nav">
-        <ul class="menu__nav-list">
-          <li class="menu__nav-item">
-            <a href="#Studying program" class="menu__nav-link">Studying program</a>
+      <a class="mobile__logo" href="#">
+        <img src="./images/header/logo-dark-mob.svg" />
+      </a>
+      <nav class="mobile__menu-nav">
+        <ul class="mobile__menu-nav-list">
+          <li class="mobile__menu-nav-item">
+            <a href="#Studying program" class="mobile__menu-nav-link">Studying program</a>
           </li>
-          <li class="menu__nav-item">
-            <a href="#About" class="menu__nav-link active">About</a>
+          <li class="mobile__menu-nav-item">
+            <a href="#About" class="mobile__menu-nav-link active">About</a>
           </li>
-          <li class="menu__nav-item">
-            <a href="#Training options" class="menu__nav-link">Training options</a>
+          <li class="mobile__menu-nav-item">
+            <a href="#Training options" class="mobile__menu-nav-link">Training options</a>
           </li>
-          <li class="menu__nav-item">
-            <a href="#Contacts" class="menu__nav-link">Contacts</a>
+          <li class="mobile__menu-nav-item">
+            <a href="#Contacts" class="mobile__menu-nav-link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <button class="modal-btn" type="button" data-modal-open>Consultation by phone</button>
+      <button class="modal-btn" type="button">CONSULTATION BY PHONE</button>
       <button type="button" class="mobile__menu-button" data-menu-close>
-        <svg class="mobile__menu-button-close" width="" height="">
-          <use href=""></use>
+        <svg class="mobile__menu-button-close" width="14px" height="14px">
+          <use href="./images/icons.svg#menu-close"></use>
         </svg>
       </button>
     </div>
