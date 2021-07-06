@@ -1,20 +1,14 @@
 .how-we-do {
   margin-left: auto;
   margin-right: auto;
-  &__title {
-    text-align: center;
-    color: var(--main-color);
-    margin-bottom: 30px;
-    margin-top: 50px;
-    text-align: center;
-  }
   &__card {
     background-color: var(--white);
     padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: var(--card-shdw);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    cursor: pointer;
   }
   &__card:hover {
     background-color: var(--accent-color);
@@ -58,7 +52,6 @@
   }
   &__icon {
     fill: var(--accent-color);
-    margin-bottom: 20px;
     height: 45px;
     width: auto;
   }
@@ -69,10 +62,11 @@
     line-height: 2;
     font-weight: 600;
     color: var(--main-color);
-  }
-
-  &__heading {
     position: relative;
+    width:190px;
+    margin-left: auto;
+    margin-right: auto;
+   
   }
   &__heading::after {
     content: '';
@@ -81,7 +75,7 @@
     height: 3px;
     background-color: var(--accent-color);
     position: absolute;
-    left: 48%;
+    left: 45%;
     bottom: -5px;
   }
   &__description {
@@ -91,15 +85,13 @@
     line-height: 1.6;
     font-weight: 400;
     color: var(--secondary-color);
-    padding-top: 25px;
+    margin-top: 45px;
   }
   &__icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  &__container{
-      margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -107,6 +99,9 @@
 @media screen and (max-width: 767px) {
   .how-we-do__card {
     margin-bottom: 15px;
+  }
+  .section__title {
+    text-align: center;
   }
 }
 //=============планшет
@@ -122,67 +117,54 @@
     &__card:nth-child(2n + 1) {
       margin-right: 20px;
     }
-    //&__container {
-    // margin-top: -20px;
-    // margin-left: -20px;
-    // }
     &__heading {
       font-weight: 700;
       font-size: 14px;
       line-height: 2;
+      width: 200px;
+      margin-left: 60px;
     }
     &__heading::after {
-      left: 47%;
+      left: 45%;
       bottom: -5px;
     }
-    &__title {
-      font-weight: 800;
-      font-size: 26px;
-      line-height: 1.3;
-    }
     &__description {
-      margin-top: 30px;
+      margin-top: 50px;
     }
     &__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
+  .section__title {
+    text-align: center;
   }
-
-  
 }
 //=============десктоп
 @media screen and (min-width: 1366px) {
   .how-we-do {
     &__card {
       width: 424px;
-      //height: 396px;
       margin-right: 20px;
-    }
-    &__title {
-      font-size: 46px;
-      line-height: 1.2;
-      text-align: left;
     }
     &__heading {
       font-weight: 700px;
       font-size: 20px;
       line-height: 1.4;
+       width: 256px;
+    margin-left: 80px;
     }
     &__description {
       font-weight: 500;
       font-size: 18px;
       line-height: 1.5;
     }
-    &__icon {
-      margin-bottom: 30px;
-    }
+
     &__card:nth-child(3n + 3) {
       margin-right: 0;
     }
-    &__container{
-        margin-top: 50px;
-    }
+  }
+  .section__title {
+    text-align: left;
   }
 }
