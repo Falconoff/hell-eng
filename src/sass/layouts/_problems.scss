@@ -1,101 +1,80 @@
-.problems{
-    
-    counter-reset: number;
-    margin-bottom: 50px;
-    background-image: linear-gradient(
-        to bottom,
-        var(--main-color)79%,
-        var(--white)21%
-    );
-    &__title{
-        padding-top: 25px;
-        padding-bottom: 40px;
-        color: var(--white);
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 1.33;
-        &--help{
-            color: var(--accent-color);
-        }
+.problems {
+  counter-reset: number;
+  background-image: linear-gradient(to bottom, var(--main-color) 79%, var(--white) 21%);
+  &__title {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  &__list {
+    padding-top: 20px;
+    padding-left: 30px;
+    list-style-position: outside;
+    background-color: var(--white);
+    &--text {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.4;
+      position: relative;
+      padding-top: 10px;
     }
-    &__list{
-        padding-top: 20px;
-        padding-left: 30px;
-        list-style-position: outside;
-        
-        background-color: var(--white);
-        &--text{
-            margin-top: 15px;
-            margin-bottom: 44px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.4;
-            position: relative;
-            padding-top: 10px;
-
-        }
-    }
+  }
 }
-
-
-.problems__list--text::before{
-    position: absolute;
-    top: -10px;
-    counter-increment: number;
-    content:"-" counter(number, decimal-leading-zero) "";
+.section__title {
+  &--help {
     color: var(--accent-color);
+  }
+}
+.problems__list--text::before {
+  position: absolute;
+  top: -10px;
+  counter-increment: number;
+  content: '-' counter(number, decimal-leading-zero) '';
+  color: var(--accent-color);
 }
 
-
-@media screen and (min-width: 768px) and (max-width:1315px) {
-    .problems{
-        &__title{
-            padding-top: 60px;   
-            padding-bottom: 25px;
-        }
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            padding-bottom: 30px;
-            justify-content: center;
-            &--text{
-                flex-basis: calc( 100% / 2 - 20px);
-                margin-right: 20px;
-            }
-            &--text:nth-child(2n+1){
-                padding-left: 95px;
-            }
-            &--text:nth-child(2n){
-                padding-right: 95px;
-            }
-        }
-       
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .problems {
+    &__title {
+      padding-top: 60px;
+      margin-bottom: 25px;
     }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 95px;
+      padding-right: 95px;
+      padding-top: 55px;
+
+      &--text {
+        flex-basis: calc(100% / 2 - 20px);
+        margin-right: 20px;
+      }
+    }
+  }
 }
-@media screen and (min-width: 1316px) {
-    .problems{
-        &__title{
-            font-weight: 800;
-            font-size: 46px;
-            line-height: 1.3;
-            letter-spacing: 0.03em;
-        }
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            padding-top: 70px;
-            padding-left: 114px;
-            padding-bottom: 60px;
-            &--text{
-
-                font-weight: 700;
-                font-size: 20px;
-                flex-basis: calc( 100% / 3 - 40px);
-            }
-            &--text::before {
-                top:-20px;
-            }
-        }
+@media screen and (min-width: 1366px) {
+  .problems {
+    &__title {
+      width: 866px;
+      padding-top: 100px;
+      padding-bottom: 70px;
     }
-    
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 65px 112px;
+      &--text {
+        font-weight: 700;
+        font-size: 20px;
+        flex-basis: calc(100% / 3 - 40px);
+        margin-right: 40px;
+        margin-bottom: 32px;
+      }
+      &--text::before {
+        top: -20px;
+      }
+    }
+  }
 }
