@@ -1,0 +1,58 @@
+.guarantee{
+    &__section-title{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 26px;
+    }
+    &__container{
+        padding: 50px 20px;
+        background-color: #f1f1f1;
+        position: relative;
+    }
+    &__list-item{
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.66;
+        border-left: 1px dashed;
+        color: #3D3D3D;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 14px;
+            width: 15px;
+            height: 20px;
+            background-image: url('/images/guarantee/campfire.svg');
+            background-size: cover;
+        }
+    }
+}
+//=============responsive-mobile==============//
+@media screen and (min-width: 768px){
+    .guarantee__list-item::before{
+        left: 74px;
+    }
+    .guarantee__container{
+        padding: 30px 50px 30px 80px;
+    }
+}
+//=============desktop================//
+@media screen and (min-width: 1366px){
+    .guarantee__list-item{
+        padding-left: 40px;
+        font-size: 20px;
+        &::before{
+            width: 22px;
+            height: 30px;
+            left: 106px;
+        }
+    }
+    .guarantee__container{
+        padding: 45px 114px;
+
+    }
+}
