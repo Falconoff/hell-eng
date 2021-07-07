@@ -16,7 +16,7 @@
     background-position: center;
     background-size: 176px 136px;
     position: absolute;
-    bottom: -40px;
+    bottom: -100px;
     right: 0;
 
     @media (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -32,14 +32,13 @@
     content: '';
     width: 384px;
     height: 280px;
-    background-image: url('../images/program/mob-program-section.png');
+    background-image: url('../images/program/tabl-program-section.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 384px 280px;
     position: absolute;
-    bottom: -51px;
+    bottom: -100px;
     right: 0;
-    background-image: url('../images/program/tabl-program-section.png');
 
     @media (min-device-pixel-ratio: 2) and (min-width: 768px),
       (min-resolution: 192dpi) and (min-width: 768px),
@@ -50,11 +49,16 @@
 }
 
 .section__title_padding {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+}
+
+.program__first-list {
+  padding-left: 68px;
 }
 
 .program__first-list-item {
