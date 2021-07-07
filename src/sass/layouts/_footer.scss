@@ -1,6 +1,94 @@
-.footer-index {
-  background-color: var(--white);
+.footer{
+   background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
 }
-.footer-container {
+.footer-container--black{
+  //background-color: black;
+ height: 70px;
+ padding-top: 22px;
+}
+
+.footer__icon{
+   display: block;
+   width: auto;
+   height: auto;
+}
+.phone-number{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  
+  display: block;
+  
+  &__icon{
+    fill: var(--accent-color);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+}
+.toptal{
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
   text-align: center;
+}
+//MEDIA-RULES
+@media screen and (max-width: 767px) {
+.footer-container--white{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.phone-number{
+  margin-bottom: 30px;
+  ::after{
+    display: none;
+  }
+}
+.footer__logo{
+  margin-bottom: 20px;
+}
+}
+@media screen and (min-width: 768px) {
+  .footer{
+   background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
+    &__logo{
+      margin-right: 203px;
+    }
+  }
+.phone-number{
+  font-size: 20px;
+  position: relative;
+  padding-top: 10px;
+  &::after{
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  top:0;
+  left: 100%;
+  }
+} 
+.footer-container--white{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+}
+@media screen and (min-width: 1366px) {
+.footer{
+   background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
+
+  &__logo{
+      margin-right: 291px;
+    }}
+    .toptal{
+      text-align: left;
+    }
 }
