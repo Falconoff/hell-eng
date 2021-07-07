@@ -1,6 +1,4 @@
 .contacts{
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 50px;
     text-align: center;
     color: var(--white);
@@ -56,7 +54,6 @@
 //=============responsive-mobile==============//
 @media screen and (max-width: 767px){
     .contacts{
-        max-width: 480px;
     &__title{
         margin-bottom: 30px;
         font-size: 14px;
@@ -67,7 +64,6 @@
 @media screen and (min-width: 768px){
     .contacts{
         padding-top: 66px;
-        max-width: 768px;
         &__title{
             margin-bottom: 50px;
             font-size: 26px;
@@ -84,7 +80,7 @@
             }
         }
         &__form-button{
-            padding: 16px 43px;
+            padding: 16px 0px;
         }
         &__input-wrapp{
             display: flex;
@@ -97,7 +93,7 @@
 @media screen and (min-width: 1366px){
     .contacts{
         padding-top: 100px;
-        max-width: 1680px;
+        // max-width: 1680px;
         &__title{
             margin-bottom: 50px;
             font-size: 46px;
@@ -116,7 +112,7 @@
             }
         }
         &__form-button{
-            padding: 25px 71px;
+            padding: 25px 0px;
             width: 354px;
             letter-spacing: 0.14em;
         }
