@@ -1,7 +1,6 @@
 
 //верхний марджин в advantages нужно буждет подогнать после добавления хиро!!!
 .advantages{
-    margin-top: 30px;
     &__list-item{
         display: flex;
         align-items: center;
@@ -68,7 +67,6 @@
 @media screen and (min-width: 768px){
     .advantages{
         &__list{
-            margin-bottom: 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -99,9 +97,6 @@
             max-width: 366px;
             margin-left: -20px;
             padding-left: 104px
-        }
-        &__list{
-            margin-bottom: 130px;
         }
         &__list-item{
             max-width: 366px;
