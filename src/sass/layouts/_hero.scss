@@ -1,5 +1,4 @@
 .hero {
-  min-width: 320px;
   height: 560px;
 
   padding-top: 50px;
@@ -13,33 +12,15 @@
   }
   &__slogan {
     margin-bottom: 52px;
-
-    font-size: 14px;
-    line-height: 1.57;
-    letter-spacing: 0.08em;
   }
   &__slogan-primary {
     font-weight: 500;
     color: var(--secondary-color);
   }
   &__button {
-    margin: 0 auto;
-    margin-bottom: 55px;
+    margin: 0 auto 50px;
 
     display: block;
-    width: 260px;
-    height: 48px;
-
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--white);
-    text-align: center;
-    padding: 14px 0;
-
-    background-color: var(--accent-color);
   }
   &__photo {
     margin: auto;
@@ -65,7 +46,6 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
     height: 470px;
 
     background-image: url('../images/hero/hero-back-tab.png');
@@ -103,8 +83,7 @@
 }
 @media screen and (min-width: 1366px) {
   .hero {
-    min-width: 1680px;
-    height: 800px;
+    height: 806px;
 
     background-image: url('../images/hero/hero-back-desk.png');
     &__content-box {
@@ -117,7 +96,6 @@
     }
     &__slogan {
       font-size: 20px;
-      line-height: 1.65;
     }
 
     &__button {
@@ -125,12 +103,12 @@
       height: 70px;
 
       font-size: 14px;
-      line-height: 1.21;
       padding: 26px 0;
     }
     &__photo {
       width: 843px;
       height: 720px;
+
       background-image: url('../images/hero/hero-desk.png');
     }
   }
