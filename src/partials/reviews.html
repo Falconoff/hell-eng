@@ -1,71 +1,86 @@
-<section class="section">
+<section class="section section--no-padding-top">
   <div class="container">
     <h2 class="section__title section__title--align">Feedback from graduates</h2>
     <div class="slider">
       <article class="review">
-        <img
-          class="review__photo"
-          src="./images/reviews/tonya-main-mob.png"
-          alt="reviewer's photo"
-        />
-        <a class="review__social-link" href="#"
-          ><svg class="review__icon" width="30" height="17">
-            <use href="./images/icons.svg#vk-icon"></use></svg
-        ></a>
-        <p class="review__name">Tonya Kucherovskaya</p>
-        <p class="review__education">
-          Graduated from 2015, National University of Bioresources and natural history of Ukraine
-        </p>
-        <p class="review__text">
-          In a short time with Elena, I mastered grammar and replenished my completely empty
-          vocabulary. From the first lesson I realized that I was on my plate. Elena and I became
-          friends because she was really worried about my success. She became an authority for me,
-          but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that
-          I'm student <span id="dots">...</span
-          ><span id="more"
-            >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
-            auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
-            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
-            turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-            fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-          >
-          <button onclick="myFunction()" id="myBtn">Read more</button>
-        </p>
+        <div class="review__col-left">
+          <img
+            class="review__photo"
+            srcset="
+              ./images/reviews/tonya-main-mob.png     90w,
+              ./images/reviews/tonya-main-mob@2x.png 180w,
+              ./images/reviews/tonya-main-big.png    150w,
+              ./images/reviews/tonya-main-big@2x.png 300w
+            "
+            sizes="(min-width: 768px) 150px, 90px"
+            src="./images/reviews/tonya-main-mob.png"
+            alt="reviewer's photo"
+          />
+          <a class="review__social-link" href="#"
+            ><svg class="review__icon" width="30" height="30">
+              <use href="./images/icons.svg#vk-icon"></use></svg
+          ></a>
+        </div>
+        <div class="review__col-right">
+          <p class="review__name">Tonya Kucherovskaya</p>
+          <p class="review__education">
+            Graduated from 2015, National University of Bioresources and natural history of Ukraine
+          </p>
+          <p class="review__text">
+            In a short time with Elena, I mastered grammar and replenished my completely empty
+            vocabulary. From the first lesson I realized that I was on my plate. Elena and I became
+            friends because she was really worried about my success. She became an authority for me,
+            but I did not tremble in class, fearing to make the slightest mistake. Now I can brag
+            that I'm student<span id="dots">...</span
+            ><span id="more"
+              >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+              auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum
+              nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+              sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+              congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+            >
+            <button class="review__read-more-btn" onclick="myFunction()" id="myBtn">
+              Read more
+            </button>
+          </p>
+        </div>
       </article>
 
-      <button class="slider__arrow slider__arrow--prev">
-        <svg class="review__icon" width="27" height="15">
+      <div class="slider__pagination-wrap">
+        <ul class="slider__pagination">
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-1-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-2-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-3-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-4-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-5-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-6-sm.png" alt="reviewer's article link" />
+          </li>
+          <li class="slider__dot">
+            <img src="./images/reviews/girl-7-sm.png" alt="reviewer's article link" />
+          </li>
+        </ul>
+      </div>
+      <button class="slider__arrow-btn slider__arrow--prev">
+        <svg class="slider__icon" width="27" height="15">
           <use href="./images/icons.svg#arrow-left"></use>
         </svg>
       </button>
-      <button class="slider__arrow slider__arrow--next">
-        <svg class="review__icon" width="27" height="15">
+      <button class="slider__arrow-btn slider__arrow--next">
+        <svg class="slider__icon" width="27" height="15">
           <use href="./images/icons.svg#arrow-right"></use>
         </svg>
       </button>
-      <ul class="slider__pagination">
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-1-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-2-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-3-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-4-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-5-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-6-sm.png" alt="reviewer's article link" />
-        </li>
-        <li class="slider__dot">
-          <img src="./images/reviews/girl-7-sm.png" alt="reviewer's article link" />
-        </li>
-      </ul>
     </div>
   </div>
 </section>

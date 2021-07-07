@@ -1,4 +1,6 @@
 .contacts{
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 50px;
     text-align: center;
     color: var(--white);
@@ -38,22 +40,12 @@
             margin-bottom: 50px;
         }
     }
-    &__form-button{
-        padding: 14px 0;
-        margin-bottom: 50px;
-        width: 260px;
-        font-weight: 700;
-        line-height: 1.25;
-        letter-spacing: 0.08em;
-        text-transform:uppercase;
-        background-color:var(--accent-color);
-        color: var(--white);
-    }
 }
 
 //=============responsive-mobile==============//
 @media screen and (max-width: 767px){
     .contacts{
+        max-width: 480px;
     &__title{
         margin-bottom: 30px;
         font-size: 14px;
@@ -63,6 +55,7 @@
 //=============tablet================//
 @media screen and (min-width: 768px){
     .contacts{
+        width: 768px;
         padding-top: 66px;
         &__title{
             margin-bottom: 50px;
@@ -79,9 +72,7 @@
                 margin-bottom: 31px;
             }
         }
-        &__form-button{
-            padding: 16px 0px;
-        }
+        
         &__input-wrapp{
             display: flex;
             flex-direction: column;
@@ -92,6 +83,7 @@
 //=============desktop================//
 @media screen and (min-width: 1366px){
     .contacts{
+        width: 1680px;
         padding-top: 100px;
         // max-width: 1680px;
         &__title{
@@ -111,11 +103,7 @@
                 margin-bottom: 80px;
             }
         }
-        &__form-button{
-            padding: 25px 0px;
-            width: 354px;
-            letter-spacing: 0.14em;
-        }
+        
     }
 }
 /*  Media-rules for background images 2x and 0 - 767px */

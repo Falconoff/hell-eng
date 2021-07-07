@@ -1,0 +1,42 @@
+.btn{
+    padding: 16px 0;
+    margin-bottom: 50px;
+    width: 260px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform:uppercase;
+    color: var(--white);
+    background-color:var(--accent-color);
+    cursor: pointer;
+    border: transparent;
+    transition: background-color var(--trans-duration) var(--timing-function),
+    box-shadow var(--trans-duration) var(--timing-function);
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: #E15A00;
+        box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
+    }
+    
+}
+//=============btn-desktop================//
+@media screen and (min-width: 1366px){
+.btn{
+    padding: 27px 0px;
+    width: 354px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    }
+}
+
+.btn-clear{
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+}
