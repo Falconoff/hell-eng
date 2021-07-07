@@ -1,16 +1,16 @@
-function myFunction() {
-  console.log('onclick');
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+(() => {
+  const textDots = document.querySelector("[data-dots]");
+  const moreText = document.querySelector("[data-more]");
+  const readMoreBtn = document.querySelector("[data-read-more-btn]");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Читать больше"; 
-    moreText.style.display = "none";
+  readMoreBtn.addEventListener("click", () => {
+    moreText.classList.toggle("is-hidden");
+    textDots.classList.toggle("is-hidden");
+
+  if (textDots.className !== "is-hidden") {
+    readMoreBtn.innerHTML = "Read more"; 
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Читать меньше"; 
-    moreText.style.display = "inline";
+    readMoreBtn.innerHTML = "Hide"; 
   }
-}
+  });
+})();
