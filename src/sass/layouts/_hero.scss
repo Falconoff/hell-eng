@@ -18,21 +18,9 @@
     color: var(--secondary-color);
   }
   &__button {
-    margin: 0 auto;
-    margin-bottom: 55px;
+    margin: 0 auto 50px;
 
     display: block;
-    width: 260px;
-    height: 48px;
-
-    font-size: 12px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: var(--white);
-    text-align: center;
-    padding: 14px 0;
-
-    background-color: var(--accent-color);
   }
   &__photo {
     margin: auto;
