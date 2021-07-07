@@ -1,4 +1,6 @@
 .contacts{
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 50px;
     text-align: center;
     color: var(--white);
@@ -38,12 +40,12 @@
             margin-bottom: 50px;
         }
     }
-    
 }
 
 //=============responsive-mobile==============//
 @media screen and (max-width: 767px){
     .contacts{
+        max-width: 480px;
     &__title{
         margin-bottom: 30px;
         font-size: 14px;
@@ -53,6 +55,7 @@
 //=============tablet================//
 @media screen and (min-width: 768px){
     .contacts{
+        width: 768px;
         padding-top: 66px;
         &__title{
             margin-bottom: 50px;
@@ -80,6 +83,7 @@
 //=============desktop================//
 @media screen and (min-width: 1366px){
     .contacts{
+        width: 1680px;
         padding-top: 100px;
         // max-width: 1680px;
         &__title{
