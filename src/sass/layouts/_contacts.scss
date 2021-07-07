@@ -38,17 +38,7 @@
             margin-bottom: 50px;
         }
     }
-    &__form-button{
-        padding: 14px 0;
-        margin-bottom: 50px;
-        width: 260px;
-        font-weight: 700;
-        line-height: 1.25;
-        letter-spacing: 0.08em;
-        text-transform:uppercase;
-        background-color:var(--accent-color);
-        color: var(--white);
-    }
+    
 }
 
 //=============responsive-mobile==============//
@@ -79,9 +69,7 @@
                 margin-bottom: 31px;
             }
         }
-        &__form-button{
-            padding: 16px 0px;
-        }
+        
         &__input-wrapp{
             display: flex;
             flex-direction: column;
@@ -111,11 +99,7 @@
                 margin-bottom: 80px;
             }
         }
-        &__form-button{
-            padding: 25px 0px;
-            width: 354px;
-            letter-spacing: 0.14em;
-        }
+        
     }
 }
 /*  Media-rules for background images 2x and 0 - 767px */
