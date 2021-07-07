@@ -12,7 +12,8 @@
     background-color:var(--accent-color);
     cursor: pointer;
     border: transparent;
-    transition: background-color 250ms linear;
+    transition: background-color var(--trans-duration) var(--timing-function),
+    box-shadow var(--trans-duration) var(--timing-function);
     &:focus,
     &:active,
     &:hover{
