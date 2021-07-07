@@ -1,17 +1,18 @@
 .section {
   &__problems {
+    position: relative;
+    counter-reset: number;
+    background-image: linear-gradient(to bottom, var(--main-color) 60%, var(--white) 40%);
+    z-index: 1;
     &__icon {
       display: none;
     }
-    position: relative;
-    counter-reset: number;
-    background-image: linear-gradient(to bottom, var(--main-color) 75%, var(--white) 25%);
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     &__list {
       padding-top: 20px;
       padding-left: 30px;
       list-style-position: outside;
       background-color: var(--white);
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
       &--text {
         margin-bottom: 25px;
@@ -19,7 +20,7 @@
         font-size: 14px;
         line-height: 1.4;
         position: relative;
-        padding-top: 10px;
+        padding-top: 20px;
       }
     }
   }
@@ -32,10 +33,22 @@
 
 .section__problems__list--text::before {
   position: absolute;
-  top: -10px;
+
   counter-increment: number;
-  content: '-' counter(number, decimal-leading-zero) '';
+  content: counter(number, decimal-leading-zero) '';
   color: var(--accent-color);
+  left: 50px;
+}
+.section__problems__list--text:after {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #ff6b08;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -63,10 +76,11 @@
         display: block;
         position: absolute;
         right: 0;
-        bottom: 15%;
+        bottom: 30%;
         width: 455px;
         height: 472px;
         fill: #3d3d3d;
+        z-index: -1;
       }
       &__title {
         width: 866px;
