@@ -1,23 +1,31 @@
-.problems {
-  counter-reset: number;
-  background-image: linear-gradient(to bottom, var(--main-color) 79%, var(--white) 21%);
-  &__title {
-    padding-top: 25px;
-    padding-bottom: 40px;
-  }
-  &__list {
-    padding-top: 20px;
-    padding-left: 30px;
-    list-style-position: outside;
-    background-color: var(--white);
-    &--text {
-      margin-top: 15px;
-      margin-bottom: 25px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.4;
-      position: relative;
-      padding-top: 10px;
+.section {
+  &__problems {
+    &__icon {
+      display: none;
+    }
+    position: relative;
+    counter-reset: number;
+    background-image: linear-gradient(to bottom, var(--main-color) 75%, var(--white) 25%);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    &__title {
+      padding-top: 25px;
+      padding-bottom: 40px;
+    }
+    &__list {
+      padding-top: 20px;
+      padding-left: 30px;
+      list-style-position: outside;
+      background-color: var(--white);
+
+      &--text {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.4;
+        position: relative;
+        padding-top: 10px;
+      }
     }
   }
 }
@@ -26,7 +34,7 @@
     color: var(--accent-color);
   }
 }
-.problems__list--text::before {
+.section__problems__list--text::before {
   position: absolute;
   top: -10px;
   counter-increment: number;
@@ -35,45 +43,58 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
-  .problems {
-    &__title {
-      padding-top: 60px;
-      margin-bottom: 25px;
-    }
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 95px;
-      padding-right: 95px;
-      padding-top: 55px;
+  .section {
+    &__problems {
+      &__title {
+        padding-top: 60px;
+        margin-bottom: 25px;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 95px;
+        padding-right: 95px;
+        padding-top: 55px;
 
-      &--text {
-        flex-basis: calc(100% / 2 - 20px);
-        margin-right: 20px;
+        &--text {
+          flex-basis: calc(100% / 2 - 20px);
+          margin-right: 20px;
+        }
       }
     }
   }
 }
 @media screen and (min-width: 1366px) {
-  .problems {
-    &__title {
-      width: 866px;
-      padding-top: 100px;
-      padding-bottom: 70px;
-    }
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 65px 112px;
-      &--text {
-        font-weight: 700;
-        font-size: 20px;
-        flex-basis: calc(100% / 3 - 40px);
-        margin-right: 40px;
-        margin-bottom: 32px;
+  .section {
+    &__problems {
+      &__icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 455px;
+        height: 472px;
+        fill: #3d3d3d;
       }
-      &--text::before {
-        top: -20px;
+      &__title {
+        width: 866px;
+        padding-top: 100px;
+        padding-bottom: 70px;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 65px 112px;
+        &--text {
+          font-weight: 700;
+          font-size: 20px;
+          flex-basis: calc(100% / 3 - 40px);
+          margin-right: 40px;
+          margin-bottom: 32px;
+        }
+        &--text::before {
+          top: -20px;
+        }
       }
     }
   }
