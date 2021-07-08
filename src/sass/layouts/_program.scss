@@ -17,10 +17,9 @@
     content: '';
     width: 176px;
     height: 136px;
-    background-image: url('../images/program/mob-program-section.png');
+    background-image: url('../images/program/mob-program-sec.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 176px 136px;
     position: absolute;
     bottom: -100px;
     right: 0;
@@ -28,7 +27,7 @@
     @media (min-device-pixel-ratio: 2) and (max-width: 767px),
       (min-resolution: 192dpi) and (max-width: 767px),
       (min-resolution: 2dppx) and (max-width: 767px) {
-      background-image: url('../images/program/mob-program-section@2x.png');
+      background-image: url('../images/program/mob-program-sec2x.png');
     }
   }
 }
@@ -59,37 +58,31 @@
     content: '';
     width: 760px;
     height: 502px;
-    background-image: url('../images/program/desck-program-section.png');
+    background-image: url('../images/program/deck-program-sec.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 760px 502px;
     position: absolute;
-    bottom: -224px;
-    left: -145px;
+    bottom: -280px;
+    left: -210px;
 
     @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
       (min-resolution: 192dpi) and (min-width: 1366px),
       (min-resolution: 2dppx) and (min-width: 1366px) {
-      background-image: url('../images/program//desck-program-section2x.png');
+      background-image: url('../images/program//deck-program-sec2x.png');
     }
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .program__container {
-    padding-left: 160px;
-  }
+.container__margin {
+  margin-bottom: 90px;
 }
 
-.section__title_padding {
-  padding-bottom: 20px;
+.section__title_align {
   text-align: center;
 
   @media screen and (min-width: 768px) {
     text-align: left;
-  }
-  @media screen and (min-width: 1366px) {
-    padding-left: 160px;
   }
 }
 
@@ -131,7 +124,7 @@
     width: 240px;
 
     &:not(:last-child) {
-      padding-right: 30px;
+      margin-right: 30px;
     }
   }
 
@@ -201,6 +194,10 @@
   background-color: var(--accent-color);
   position: absolute;
   top: 9px;
+
+  @media screen and (min-width: 1366px) {
+    top: 14px;
+  }
 }
 
 .program__third-list {
