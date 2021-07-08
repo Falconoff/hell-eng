@@ -30,9 +30,13 @@
     }
   }
   .menu-button {
+    cursor: pointer;
     padding: 0;
     border: none;
     background-color: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile {
     &__logo {
@@ -41,7 +45,7 @@
     &__logo-mob {
       position: absolute;
       margin-top: 30px;
-      margin-left: 30px;
+      margin-left: 25px;
     }
     &__menu {
       position: fixed;
@@ -54,8 +58,9 @@
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
+
       &-nav-list {
-        margin-left: 30px;
+        margin-left: 25px;
         margin-top: 109px;
       }
       &-nav-link {
@@ -83,6 +88,13 @@
         border: none;
         background-color: transparent;
         fill: var(--accent-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &-button:hover .mobile__menu-button-close,
+      &-button:focus .mobile__menu-button-close {
+        fill: var(--accent-color);
       }
     }
   }
@@ -91,6 +103,9 @@
     visibility: visible;
     pointer-events: auto;
     z-index: 10;
+    transition-property: visible;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .mobile__menu-btn {
@@ -109,7 +124,7 @@
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .header__menu-nav {
     display: none;
   }
@@ -138,6 +153,7 @@
       margin-left: 40px;
       padding: 0;
       border: none;
+      cursor: pointer;
       background-color: transparent;
     }
   }
@@ -193,10 +209,15 @@
         background-color: transparent;
         width: 14px;
         height: 14px;
-        fill: var(--modal-list-icon-fill);
+        cursor: pointer;
+        fill: var(--white);
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &-button:hover .mobile__menu-button-close,
+      &-button:focus .mobile__menu-button-close {
+        fill: var(--accent-color);
       }
     }
   }
