@@ -23,6 +23,9 @@
         position: relative;
         padding-top: 20px;
       }
+      &--text:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
   &__title {
@@ -44,7 +47,7 @@
   content: '';
   width: 25px;
   height: 2px;
-  background-color: #ff6b08;
+  background-color: var(--accent-color);
   display: inline-block;
   position: absolute;
   top: -6px;
@@ -62,6 +65,9 @@
         &--text {
           flex-basis: calc(100% / 2 - 20px);
           margin-right: 20px;
+        }
+        &--text:nth-last-child(-n + 2) {
+          margin-bottom: 0px;
         }
       }
     }
@@ -87,15 +93,18 @@
         display: flex;
         flex-wrap: wrap;
         padding: 65px 112px;
+        justify-content: space-between;
         &--text {
           font-weight: 700;
           font-size: 20px;
           flex-basis: calc(100% / 3 - 40px);
-          margin-right: 40px;
-          margin-bottom: 32px;
         }
         &--text::before {
           top: -20px;
+        }
+
+        &--text:nth-child(n + 3) {
+          margin-bottom: 0px;
         }
       }
     }
