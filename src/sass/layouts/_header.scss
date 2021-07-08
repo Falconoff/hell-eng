@@ -58,6 +58,9 @@
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
+      animation-name: animatebackdrop;
+      animation-duration: var(--trans-duration);
+      animation-timing-function: var(--timing-function);
 
       &-nav-list {
         margin-left: 25px;
@@ -103,9 +106,6 @@
     visibility: visible;
     pointer-events: auto;
     z-index: 10;
-    transition-property: visible;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .mobile__menu-btn {
@@ -178,6 +178,9 @@
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
+      animation-name: animatebackdrop;
+      animation-duration: var(--trans-duration);
+      animation-timing-function: var(--timing-function);
       &-nav {
         margin-top: 117px;
         flex-direction: column;
@@ -211,9 +214,9 @@
         height: 14px;
         cursor: pointer;
         fill: var(--white);
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-name: animatebackdrop;
+        animation-duration: var(--trans-duration);
+        animation-timing-function: var(--timing-function);
       }
       &-button:hover .mobile__menu-button-close,
       &-button:focus .mobile__menu-button-close {
