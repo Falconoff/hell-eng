@@ -23,7 +23,7 @@
     display: block;
   }
   &__photo {
-    margin: auto;
+    margin: 0 auto;
 
     width: 208px;
     height: 178px;
@@ -52,18 +52,19 @@
 
     padding-top: 90px;
     &__container {
+      padding-right: 20px;
+
       display: flex;
     }
     &__content-box {
       width: 332px;
     }
     &__button {
+      margin: 0;
+
       display: inline-block;
     }
     &__photo {
-      position: absolute;
-      left: 50%;
-
       width: 376px;
       height: 322px;
 
@@ -83,16 +84,19 @@
 }
 @media screen and (min-width: 1366px) {
   .hero {
-    height: 806px;
+    height: 760px;
 
     background-image: url('../images/hero/hero-back-desk.png');
+
+    padding-top: 115px;
+    &__container {
+      padding-right: 5px;
+    }
     &__content-box {
-      width: 642px;
+      width: 493px;
     }
     &__title {
-      margin-top: 55px;
-
-      font-size: 58px;
+      font-size: 57px;
     }
     &__slogan {
       font-size: 20px;
@@ -106,6 +110,10 @@
       padding: 26px 0;
     }
     &__photo {
+      position: relative;
+      left: 115px;
+      bottom: 70px;
+
       width: 843px;
       height: 720px;
 
