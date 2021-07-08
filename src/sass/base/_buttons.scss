@@ -16,11 +16,10 @@
     &:focus,
     &:active,
     &:hover{
-        background-color: #E15A00;
-        box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
-        -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
-        -moz-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.62);
-    }
+        box-shadow: 3px 2px 9px 3px rgba(255,107,9,0.7);
+        -webkit-box-shadow: 3px 2px 9px 3px rgba(255,107,9,0.7);
+        -moz-box-shadow: 3px 2px 9px 3px rgba(255,107,9,0.7);
+        }
     
 }
 //=============btn-desktop================//
