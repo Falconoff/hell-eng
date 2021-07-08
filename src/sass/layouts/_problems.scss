@@ -1,61 +1,69 @@
 .section {
   &__problems {
+    position: relative;
+    counter-reset: number;
+    background-image: linear-gradient(to bottom, var(--main-color) 60%, var(--white) 40%);
+    z-index: 1;
+    overflow: hidden;
     &__icon {
       display: none;
     }
-    position: relative;
-    counter-reset: number;
-    background-image: linear-gradient(to bottom, var(--main-color) 75%, var(--white) 25%);
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-
-    &__title {
-      padding-top: 25px;
-      padding-bottom: 40px;
-    }
     &__list {
-      padding-top: 20px;
+      padding-top: 40px;
       padding-left: 30px;
+      padding-bottom: 40px;
       list-style-position: outside;
       background-color: var(--white);
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
       &--text {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.4;
         position: relative;
-        padding-top: 10px;
+        padding-top: 20px;
       }
     }
   }
-}
-.section__title {
-  &--help {
-    color: var(--accent-color);
+  &__title {
+    padding-bottom: 25px;
+    &--help {
+      color: var(--accent-color);
+    }
   }
 }
+
 .section__problems__list--text::before {
   position: absolute;
-  top: -10px;
+
   counter-increment: number;
-  content: '-' counter(number, decimal-leading-zero) '';
+  content: counter(number, decimal-leading-zero) '';
   color: var(--accent-color);
+  left: 50px;
+  top: -14px;
+}
+.section__problems__list--text:after {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #ff6b08;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .section {
     &__problems {
-      &__title {
-        padding-top: 60px;
-        margin-bottom: 25px;
-      }
       &__list {
         display: flex;
         flex-wrap: wrap;
         padding-left: 95px;
         padding-right: 95px;
         padding-top: 55px;
-
         &--text {
           flex-basis: calc(100% / 2 - 20px);
           margin-right: 20px;
@@ -64,22 +72,22 @@
     }
   }
 }
+
 @media screen and (min-width: 1366px) {
   .section {
     &__problems {
       &__icon {
         display: block;
         position: absolute;
-        right: 0;
-        top: 10%;
+        right: -85px;
+        bottom: 40%;
         width: 455px;
         height: 472px;
         fill: #3d3d3d;
+        z-index: -1;
       }
       &__title {
         width: 866px;
-        padding-top: 100px;
-        padding-bottom: 70px;
       }
       &__list {
         display: flex;
