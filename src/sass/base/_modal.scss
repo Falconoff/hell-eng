@@ -1,0 +1,50 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(17, 21, 24, 0.9);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+
+    animation-name: animatebackdrop;
+    animation-duration: var(--trans-duration);
+    animation-timing-function: var(--timing-function);
+}
+
+    @keyframes animatebackdrop {
+        0% {
+          opacity: 0;
+        }
+        50% {
+            opacity: 0.8;
+          }
+        100% {
+          opacity: 1;
+        }
+      }
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility:hidden;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.close-button{
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.modal_color{
+    color: var(--white);
+}
