@@ -12,10 +12,27 @@
     box-shadow: var(--big-block-shdw);
   }
 
+  &__col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      min-width: 150px;
+      margin-right: 45px;
+    }
+  }
+
   &__photo {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__social-link {
@@ -24,10 +41,6 @@
     width: 40px;
     justify-content: center;
     align-items: center;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
   }
 
   &__icon {
@@ -111,11 +124,6 @@
     display: flex;
     padding: 40px;
     margin-bottom: 30px;
-
-    &__col-left {
-      min-width: 150px;
-      margin-right: 45px;
-    }
   }
 
   @media screen and (min-width: 1366px) {
@@ -131,25 +139,35 @@
   &__arrow-btn {
     position: absolute;
 
-    width: 40px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: none;
+    border-color: transparent;
+    border-radius: 50%;
     background-color: transparent;
+    outline: none;
 
+    transition: box-shadow var(--trans-duration) var(--timing-function);
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--card-shdw);
+    }
 
     @media screen and (max-width: 767px) {
       bottom: 7px;
+      width: 40px;
+      height: 40px;
     }
     @media screen and (min-width: 768px) {
-      top: 130px;
+      top: 120px;
+      width: 60px;
+      height: 60px;
     }
     @media screen and (min-width: 1366px) {
-      top: 165px;
+      top: 150px;
     }
   }
 
@@ -157,7 +175,7 @@
     transform: translateX(-8px);
 
     @media screen and (min-width: 768px) {
-      transform: translateX(-20px);
+      transform: translateX(-30px);
     }
     @media screen and (min-width: 1366px) {
       transform: translateX(0px);
@@ -169,7 +187,7 @@
     transform: translateX(8px);
 
     @media screen and (min-width: 768px) {
-      transform: translateX(20px);
+      transform: translateX(30px);
     }
     @media screen and (min-width: 1366px) {
       transform: translateX(0px);
@@ -182,18 +200,14 @@
 
   &__pagination-wrap {
     display: flex;
+    justify-content: center;
   }
 
   &__pagination {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__dot {
-    margin-left: 4px;
-    margin-right: 4px;
-
     border-radius: 50%;
     border: 2px solid transparent;
 
@@ -206,14 +220,20 @@
     }
 
     @media screen and (min-width: 768px) {
-      margin-left: 14px;
-      margin-right: 14px;
+      &:not(:last-child) {
+        margin-right: 26px;
+      }
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    &__dot:nth-child(n + 4) {
-      display: none;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 4) {
+        display: none;
+      }
     }
   }
 }
