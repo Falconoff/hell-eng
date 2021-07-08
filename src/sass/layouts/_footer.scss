@@ -1,12 +1,10 @@
 .footer{
    background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
-}
-.footer-container--black{
-  //background-color: black;
+   &-container--black{
  height: 70px;
  padding-top: 22px;
 }
-
+}
 .footer__icon{
    display: block;
    width: auto;
@@ -36,6 +34,8 @@
 }
 //MEDIA-RULES
 @media screen and (max-width: 767px) {
+   .footer{
+   background-image: linear-gradient(to bottom, var(--white) 76%, var(--main-color) 35%);}
 .footer-container--white{
   display: flex;
   flex-direction: column;
@@ -51,10 +51,18 @@
 .footer__logo{
   margin-bottom: 20px;
 }
+  .instagram-link{
+    margin-bottom: 30px;
+  }
+
+}
+.instagram-icon{
+  width:40px;
+  height:40px;
 }
 @media screen and (min-width: 768px) {
   .footer{
-   background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
+   background-image: linear-gradient(to bottom, var(--white) 67%, var(--main-color) 33%);
     &__logo{
       margin-right: 203px;
     }
@@ -75,20 +83,25 @@
   left: 100%;
   }
 } 
-.footer-container--white{
+.footer-container{
+  &--white{
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  //width: 151px;
 }
+}
+.instagram-link{
+      margin-left: 45px;
+    } 
 }
 @media screen and (min-width: 1366px) {
 .footer{
-   background-image: linear-gradient(to bottom, var(--white) 65%, var(--main-color) 35%);
-
   &__logo{
       margin-right: 291px;
     }}
     .toptal{
       text-align: left;
-    }
+    } 
 }
