@@ -4,6 +4,7 @@
     counter-reset: number;
     background-image: linear-gradient(to bottom, var(--main-color) 60%, var(--white) 40%);
     z-index: 1;
+    overflow: hidden;
     &__icon {
       display: none;
     }
@@ -14,7 +15,6 @@
       list-style-position: outside;
       background-color: var(--white);
       box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-
       &--text {
         margin-bottom: 40px;
         font-weight: 700;
@@ -26,15 +26,14 @@
     }
   }
   &__title {
+    padding-bottom: 25px;
     &--help {
       color: var(--accent-color);
     }
   }
 }
-
 .section__problems__list--text::before {
   position: absolute;
-
   counter-increment: number;
   content: counter(number, decimal-leading-zero) '';
   color: var(--accent-color);
@@ -46,7 +45,7 @@
   content: '';
   width: 25px;
   height: 2px;
-  background-color: #ff6b08;
+  background-color: #FF6B08;
   display: inline-block;
   position: absolute;
   top: -6px;
@@ -69,18 +68,17 @@
     }
   }
 }
-
 @media screen and (min-width: 1366px) {
   .section {
     &__problems {
       &__icon {
         display: block;
         position: absolute;
-        right: 0;
-        bottom: 30%;
+        right: -85px;
+        bottom: 40%;
         width: 455px;
         height: 472px;
-        fill: #3d3d3d;
+        fill: #3D3D3D;
         z-index: -1;
       }
       &__title {
