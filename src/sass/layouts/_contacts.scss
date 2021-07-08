@@ -22,7 +22,6 @@
         padding-left: 18px;
         width: 280px;
         height: 48px;
-        font-size: 14px;
         line-height: 1.21;
         font-weight: 600;
         color: var(--white);
@@ -55,7 +54,7 @@
 //=============tablet================//
 @media screen and (min-width: 768px){
     .contacts{
-        width: 768px;
+        max-width: 768px;
         padding-top: 66px;
         &__title{
             margin-bottom: 50px;
@@ -64,28 +63,26 @@
         &__text{
             margin-bottom: 23px;
         }
-        &__form-input{
-            margin-bottom:29px;
-            width: 390px;
-            height: 48px;
-            &:last-child{
-                margin-bottom: 31px;
-            }
-        }
-        
-        &__input-wrapp{
+        &__form{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        &__form-input{
+            margin-bottom:30px;
+            width: 390px;
+            height: 48px;
+            &:first-child{
+                margin-bottom: 20px;
+            }
         }
     }
 }
 //=============desktop================//
 @media screen and (min-width: 1366px){
     .contacts{
-        width: 1680px;
+        max-width: 1680px;
         padding-top: 100px;
-        // max-width: 1680px;
         &__title{
             margin-bottom: 50px;
             font-size: 46px;
@@ -97,13 +94,13 @@
             letter-spacing: 0.08em;
          }
         &__form-input{
+            margin-bottom:80px;
             width: 478px;
             height: 70px;
-            &:last-child{
-                margin-bottom: 80px;
+            &:first-child{
+                margin-bottom: 30px;
             }
-        }
-        
+        } 
     }
 }
 /*  Media-rules for background images 2x and 0 - 767px */

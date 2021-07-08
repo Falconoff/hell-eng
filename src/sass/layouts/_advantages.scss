@@ -1,11 +1,10 @@
 
-//верхний марджин в advantages нужно буждет подогнать после добавления хиро!!!
 .advantages{
     &__list-item{
         display: flex;
         align-items: center;
         &:not(:last-child){
-            margin-bottom: 26px;
+            margin-bottom: 30px;
         }
     }
     &__icon-wrap{
@@ -28,9 +27,6 @@
     }
     &__title{
         padding-left: 68px;
-        font-size: 14px;
-        line-height: 1.66;
-        letter-spacing: 0.08em;
     }
 }
 .student-icon::after{
@@ -59,7 +55,7 @@
     .advantages{
         width: 216px;
         &__list-item:last-child{
-            margin-bottom: 50px;
+            margin-bottom: 0px;
         }
     }
 }
@@ -72,13 +68,12 @@
             justify-content: space-between;
         }
         &__list-item{
-            width: 33.3%;
-            justify-content: flex-start;
+            max-width: 214px;
             &:not(:last-child){
             margin-bottom: 0px;
             }
-                &_:nth-child(n+2){
-                max-width: 180px;
+            &:nth-child(n+2){
+                max-width: 186px;
             }
         }  
     }  
@@ -86,7 +81,6 @@
 //=============десктоп
 @media screen and (min-width: 1366px){
     .advantages{
-        width: 1344px;
         &__icon-wrap{
             width: 100px;
             height: 100px;
