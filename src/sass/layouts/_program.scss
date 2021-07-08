@@ -19,7 +19,8 @@
     height: 136px;
     background-image: url('../images/program/mob-program-sec.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 100%;
+    background-size: contain;
     position: absolute;
     bottom: -100px;
     right: 0;
