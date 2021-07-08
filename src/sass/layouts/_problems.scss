@@ -26,7 +26,6 @@
     }
   }
   &__title {
-    padding-bottom: 25px;
     &--help {
       color: var(--accent-color);
     }
@@ -45,7 +44,7 @@
   content: '';
   width: 25px;
   height: 2px;
-  background-color: #FF6B08;
+  background-color: #ff6b08;
   display: inline-block;
   position: absolute;
   top: -6px;
@@ -78,7 +77,7 @@
         bottom: 40%;
         width: 455px;
         height: 472px;
-        fill: #3D3D3D;
+        fill: #3d3d3d;
         z-index: -1;
       }
       &__title {
