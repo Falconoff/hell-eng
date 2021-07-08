@@ -48,17 +48,48 @@
   }
 }
 
-.section__title_padding {
-  padding-bottom: 20px;
-  text-align: center;
+@media screen and (min-width: 1366px) {
+  .program__container::after {
+    content: '';
+    width: 760px;
+    height: 502px;
+    background-image: url('../images/program/desck-program-section.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 760px 502px;
+    position: absolute;
+    bottom: -224px;
+    left: -145px;
 
-  @media screen and (min-width: 768px) {
-    text-align: left;
+    @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+      (min-resolution: 192dpi) and (min-width: 1366px),
+      (min-resolution: 2dppx) and (min-width: 1366px) {
+      .program__container {
+        background-image: url('../images/program//desck-program-section2x.png');
+      }
+    }
   }
-}
 
-.program__first-list {
-  padding-left: 68px;
+  @media screen and (min-width: 1366px) {
+    .program__container {
+      padding-left: 160px;
+    }
+  }
+
+  .section__title_padding {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .program__first-list {
+      padding-left: 68px;
+    }
+  }
 
   @media screen and (min-width: 1366px) {
     .program__container_border {
@@ -75,113 +106,123 @@
 
   .program__first-list-item {
     color: var(--white);
-    padding-left: 25px;
     position: relative;
 
-    &:not(:last-child) {
-      border-left: 1px solid var(--white);
-      padding-bottom: 40px;
+    @media screen and (max-width: 1365px) {
+      &:not(:last-child) {
+        border-left: 1px solid var(--white);
+        padding-bottom: 40px;
+        padding-left: 25px;
+      }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       padding-left: 50px;
+
       &:not(:last-child) {
         padding-bottom: 40px;
       }
     }
 
+    @media screen and (min-width: 1366px) {
+      width: 240px;
+      border-top: 1px solid var(--white);
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+    }
+
     @media screen and (max-width: 1365px) {
       @include font-prop(700, 14px, 1, 0.08em);
-      border-left: 1px solid var(--white);
     }
 
     @media screen and (min-width: 1366px) {
       @include font-prop(700, 20px, 1.4, 0.08em);
     }
   }
+}
 
-  .program__first-list-item_uppercase {
-    text-transform: uppercase;
+.program__first-list-item_uppercase {
+  text-transform: uppercase;
+}
+
+.program__first-list-item::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: -6px;
+
+  @media screen and (min-width: 1366px) {
+    top: -67px;
+    left: 0;
+  }
+}
+
+.program__second-list {
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    display: flex;
+  }
+}
+
+.program__second-list-item {
+  color: var(--accent-color);
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    @include font-prop(700, 12px, 1.65, 0.08em);
   }
 
-  .program__first-list-item::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    position: absolute;
-    left: -6px;
-
-    @media screen and (min-width: 1366px) {
-      top: -67px;
-      left: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    @include font-prop();
   }
 
-  .program__second-list {
-    margin-top: 20px;
+  @media screen and (min-width: 1366px) {
+    @include font-prop(700, 20px, 1.65, 0.08em);
+  }
+}
 
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
-      display: flex;
-    }
+.program__second-list-item_padding {
+  padding-left: 20px;
+}
+
+.program__second-list-item::before {
+  content: '';
+  width: 12px;
+  height: 1px;
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 9px;
+}
+
+.program__third-list {
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    width: 176px;
+    margin-right: 50px;
   }
 
-  .program__second-list-item {
-    color: var(--accent-color);
-    position: relative;
+  &:not(last-child) {
+    margin-bottom: 20px;
+  }
+}
 
-    @media screen and (max-width: 767px) {
-      @include font-prop(700, 12px, 1.65, 0.08em);
-    }
+.program__third-list-item {
+  color: var(--secondary-color);
+  opacity: 0.5;
 
-    @media screen and (min-width: 768px) {
-      @include font-prop();
-    }
-
-    @media screen and (min-width: 1366px) {
-      @include font-prop(700, 20px, 1.65, 0.08em);
-    }
+  @media screen and (max-width: 1365px) {
+    @include font-prop(500, 12px, 1.67, 0.08em);
   }
 
-  .program__second-list-item_padding {
-    padding-left: 20px;
-  }
-
-  .program__second-list-item::before {
-    content: '';
-    width: 12px;
-    height: 1px;
-    border: 1px solid transparent;
-    background-color: var(--accent-color);
-    position: absolute;
-    top: 9px;
-  }
-
-  .program__third-list {
-    margin-top: 20px;
-
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
-      width: 176px;
-      margin-right: 50px;
-    }
-
-    &:not(last-child) {
-      margin-bottom: 20px;
-    }
-  }
-
-  .program__third-list-item {
-    color: var(--secondary-color);
-    opacity: 0.5;
-
-    @media screen and (max-width: 1365px) {
-      @include font-prop(500, 12px, 1.67, 0.08em);
-    }
-
-    @media screen and (min-width: 1366px) {
-      @include font-prop(500, 18px, 1.56, 0.08em);
-    }
+  @media screen and (min-width: 1366px) {
+    @include font-prop(500, 18px, 1.56, 0.08em);
   }
 }
