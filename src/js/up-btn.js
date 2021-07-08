@@ -1,5 +1,5 @@
 $(window).on('scroll', function() {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 500) {
       if ($('#upbutton').is(':hidden')) {
           $('#upbutton').css({opacity : 1}).fadeIn('slow');
       }
@@ -8,5 +8,5 @@ $(window).on('scroll', function() {
       }
   });
   $('#upbutton').on('click', function() {
-      $('html, body').stop().animate({scrollTop : 0}, 300);
+      $('html, body').stop().animate({scrollTop : 0}, 500);
   });
