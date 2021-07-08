@@ -39,7 +39,9 @@
   content: '';
   width: 25px;
   height: 2px;
+
   background-color: var(--accent-color);
+
   display: inline-block;
   position: absolute;
   top: -6px;
@@ -76,6 +78,7 @@
         display: none;
       }
       &__list {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         padding: 70px 84px;
