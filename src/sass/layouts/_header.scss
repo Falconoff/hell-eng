@@ -15,6 +15,9 @@
   }
 }
 
+.mobile__menu{
+  transition: opacity 0.5s var(--timing-function);
+}
 @media screen and (max-width: 767px) {
   .header-btn {
     display: none;
@@ -65,10 +68,6 @@
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
-      animation-name: animatebackdrop;
-      animation-duration: var(--trans-duration);
-      animation-timing-function: var(--timing-function);
-
       &-nav-list {
         margin-left: 25px;
         margin-top: 109px;
@@ -183,9 +182,6 @@
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
-      animation-name: animatebackdrop;
-      animation-duration: var(--trans-duration);
-      animation-timing-function: var(--timing-function);
       &-nav {
         margin-top: 117px;
         flex-direction: column;
