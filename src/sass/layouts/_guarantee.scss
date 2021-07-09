@@ -32,35 +32,46 @@
 }
 //=============responsive-mobile==============//
 @media screen and (max-width: 767px){
-    .guarantee__section-title{
-        font-size: 26px;
+    .guarantee{
+        &__section-title{
+            font-size: 26px;
+        }
+        &__container{
+            width: 100%;
+        }
     }
 }
 //=============tablet==============//
 @media screen and (min-width: 768px){
-    .guarantee__list-item{
-        padding-left: 25px;
-    &::before{
-        left: 74px;
+    .guarantee{
+        &__list-item{
+            padding-left: 25px;
+            &::before{
+            left: 74px;
+            }
         }
-    }
-    .guarantee__container{
-        padding: 30px 50px 30px 80px;
+        &__container{
+            width: 100%;
+            padding: 30px 50px 30px 80px;
+        }
     }
 }
 //=============desktop================//
 @media screen and (min-width: 1366px){
-    .guarantee__list-item{
-        padding-left: 40px;
-        font-size: 20px;
-        &::before{
-            width: 22px;
-            height: 30px;
-            left: 105px;
+    .guarantee{
+        &__list-item{
+            padding-left: 40px;
+            font-size: 20px;
+            &::before{
+                width: 22px;
+                height: 30px;
+                left: 105px;
+            }
         }
-    }
-    .guarantee__container{
-        padding: 45px 114px;
-
+        &__container{
+            max-width: 1314px;
+            padding: 45px 114px;
+    
+        }
     }
 }
