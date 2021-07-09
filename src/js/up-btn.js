@@ -7,6 +7,6 @@ $(window).on('scroll', function() {
           $('#upbutton').stop(true, false).fadeOut('fast'); 
       }
   });
-  $('#upbutton').on('click', function() {
-      $('html, body').stop().animate({scrollTop : 0}, 500);
-  });
+$('#upbutton').on('click', function() {
+    $('html, body').stop().animate({scrollTop : 0}, 1000);
+});
