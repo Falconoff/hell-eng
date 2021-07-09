@@ -114,6 +114,6 @@
 .section__problems__icon {animation: col 10s linear infinite;}
 @keyframes col {
 0%,71% {fill:#3d3d3d}
-72% {fill: red}
+72% {fill: var(--accent-color)}
 75%,100% {fill:#3d3d3d}
 }
