@@ -111,9 +111,9 @@
   }
 }
 
-.section__problems__icon {animation: col 10s linear infinite;}
+.section__problems__icon {animation: col 3s ease-out infinite;}
 @keyframes col {
 0%,71% {fill:#3d3d3d}
 72% {fill: var(--accent-color)}
-75%,100% {fill:#3d3d3d}
+73%,100% {fill:#3d3d3d}
 }
